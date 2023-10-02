@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 
 const Resume = ({ income, expense, total }) => {
+
   return (
     <C.Container>
       <ResumeItem title="Entradas" Icon={FaRegArrowAltCircleUp} value={income} />
