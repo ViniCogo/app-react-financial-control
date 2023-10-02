@@ -10,11 +10,7 @@ const ResumeItem = ({ title, Icon, value }) => {
         <C.HeaderTitle>{title}</C.HeaderTitle>
         <Icon />
       </C.Header>
-      {isNegative ? (
-        <C.NegativeTotal>{value}</C.NegativeTotal>
-      ) : (
-        <C.Total>R$ {value}</C.Total>
-      )}
+        <C.Total negative={isNegative}>R$ {value}</C.Total>
     </C.Container>
   );
 };

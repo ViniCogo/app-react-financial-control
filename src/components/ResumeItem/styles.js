@@ -47,11 +47,5 @@ export const HeaderTitle = styled.p`
 export const Total = styled.span`
   font-size: 30px;
   font-weight: bold;
-  color: green;
-;`
-
-export const NegativeTotal = styled.span`
-  font-size: 30px;
-  font-weight: bold;
-  color: red;
+  color: ${(props)=> (props.negative ? "red" : "green")};
 ;`
